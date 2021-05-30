@@ -4,42 +4,47 @@ import java.util.Scanner;
  * Menu
  */
 public class Menu {
-
     public static void main(String[] args) {
-        
-        System.out.println("|              Menu               |");
-        System.out.println("|             Opção 1             |");
-        System.out.println("|             Opção 2             |");
-        System.out.println("|             Opção 3             |");
-        System.out.println("|               Sair              |");
-        Scanner menu = new Scanner(System.in);
-        String opçao;
 
-        System.out.println("Escolha uma opção:");
-        opçao = menu.nextLine();
 
-        switch (opçao) {
-            case "1":
-                 System.out.println("Voçe escolheu a opção 1");
-                
-                break;
-                case "2":
-                System.out.println("Voçe escolheu a opção 2");
-               
-               break;
-               case "3":
-               System.out.println("Voçe escolheu a opção 3");
-              
-              break;
-              case "sair":
-              System.out.println("Voçe escolheu sair");
-             
-             break; 
-            default:
-                System.out.println("Opção invalida");
-                break;
+        Scanner menu = new Scanner (System.in);
+
+        boolean sair = true;
+        while(sair){
+            System.out.println("|      Menu           |");
+            System.out.println("|  Opções:            |");
+            System.out.println("|       1. Opção 1    |");
+            System.out.println("|       2. Opção 2    |");
+            System.out.println("|       3.  Sair      |");
+
+
+            System.out.println("Selecione uma opção: ");
+            int opcao = menu.nextInt();
+
+            switch (opcao){
+                case 1:
+                    System.out.println("Opção 1 selecionada");
+                    break;
+                case 2:
+                    System.out.println("Opção 2 selecionada");
+                    break;
+                case 3:
+                    System.out.println("O programa foi encerrado");
+                    if(opcao==3)
+                        sair = false;
+                    break;
+                default:
+                    System.out.println("Opção invalida");
+                    break;
+
+            }
+
         }
 
 
     }
+
 }
+}
+
+        
