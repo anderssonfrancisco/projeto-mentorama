@@ -1,3 +1,3 @@
-# Codigo fonte de um pequeno menu
+# menu simples
 
-Menu criado como atividade do curso de java da Mentorama.
+Menu criado como atividade de curso, usando estrutura do-while, switch e if-else.
